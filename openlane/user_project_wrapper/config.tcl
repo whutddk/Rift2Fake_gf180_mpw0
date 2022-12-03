@@ -33,15 +33,15 @@ set ::env(VERILOG_FILES) "\
 	$::env(DESIGN_DIR)/../../verilog/rtl/user_project_wrapper.v"
 
 ## Clock configurations
-set ::env(CLOCK_PORT) "user_clock2"
-set ::env(CLOCK_NET) "mprj.clk"
+set ::env(CLOCK_PORT) "wb_clk_i"
+set ::env(CLOCK_NET) "i_rift2Wrap.wb_clk_i"
 
-set ::env(CLOCK_PERIOD) "10"
+set ::env(CLOCK_PERIOD) "20"
 
 ## Internal Macros
 ### Macro PDN Connections
 set ::env(FP_PDN_MACRO_HOOKS) "\
-	mprj vdd vss vdd vss"
+	i_rift2Wrap vdd vss vdd vss"
 
 ### Macro Placement
 set ::env(MACRO_PLACEMENT_CFG) $::env(DESIGN_DIR)/macro.cfg
@@ -49,13 +49,13 @@ set ::env(MACRO_PLACEMENT_CFG) $::env(DESIGN_DIR)/macro.cfg
 ### Black-box verilog and views
 set ::env(VERILOG_FILES_BLACKBOX) "\
 	$::env(CARAVEL_ROOT)/verilog/rtl/defines.v \
-	$::env(DESIGN_DIR)/../../verilog/rtl/user_proj_example.v"
+	$::env(DESIGN_DIR)/../../verilog/rtl/rift2Fake.v"
 
 set ::env(EXTRA_LEFS) "\
-	$::env(DESIGN_DIR)/../../lef/user_proj_example.lef"
+	$::env(DESIGN_DIR)/../../lef/rift2Wrap.lef"
 
 set ::env(EXTRA_GDS_FILES) "\
-	$::env(DESIGN_DIR)/../../gds/user_proj_example.gds"
+	$::env(DESIGN_DIR)/../../gds/rift2Wrap.gds"
 
 set ::env(RT_MAX_LAYER) {Metal4}
 

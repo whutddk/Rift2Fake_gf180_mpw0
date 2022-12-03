@@ -1,10 +1,10 @@
-# Caravel User Project
+# Rift2Fake
 
-[![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0) [![UPRJ_CI](https://github.com/efabless/caravel_project_example/actions/workflows/user_project_ci.yml/badge.svg)](https://github.com/efabless/caravel_project_example/actions/workflows/user_project_ci.yml) [![Caravel Build](https://github.com/efabless/caravel_project_example/actions/workflows/caravel_build.yml/badge.svg)](https://github.com/efabless/caravel_project_example/actions/workflows/caravel_build.yml)
 
-| :exclamation: Important Note            |
-|-----------------------------------------|
+## Attention
 
-## Please fill in your project documentation in this README.md file 
+A Fake Code "LFSR16" is Uploaded.
 
-Refer to [README](docs/source/index.rst) for this sample project documentation. 
+### LFSR
+A LFSR16 is instance, it will output four ramdom code in HEX to io. It will be connected to 7-segment seconds and display 4 numbers.
+A IO can lock the LFSR, it will be connect to a switch.

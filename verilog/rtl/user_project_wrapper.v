@@ -70,7 +70,7 @@ module user_project_wrapper #(
 /* User project is instantiated  here   */
 /*--------------------------------------*/
 
-user_proj_example mprj (
+rift2Wrap i_rift2Wrap (
 `ifdef USE_POWER_PINS
 	.vdd(vdd),	// User area 1 1.8V power
 	.vss(vss),	// User area 1 digital ground
@@ -102,8 +102,10 @@ user_proj_example mprj (
     .io_out(io_out),
     .io_oeb(io_oeb),
 
+
+    .user_clock2(user_clock2),
     // IRQ
-    .irq(user_irq)
+    .user_irq(user_irq)
 );
 
 endmodule	// user_project_wrapper

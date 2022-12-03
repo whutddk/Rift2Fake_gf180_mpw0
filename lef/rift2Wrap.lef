@@ -2,9 +2,9 @@ VERSION 5.7 ;
   NOWIREEXTENSIONATPIN ON ;
   DIVIDERCHAR "/" ;
   BUSBITCHARS "[]" ;
-MACRO user_proj_example
+MACRO rift2Wrap
   CLASS BLOCK ;
-  FOREIGN user_proj_example ;
+  FOREIGN rift2Wrap ;
   ORIGIN 0.000 0.000 ;
   SIZE 900.000 BY 600.000 ;
   PIN io_in[0]
@@ -3896,7 +3896,9 @@ MACRO user_proj_example
         RECT 4.000 15.940 895.700 17.100 ;
         RECT 4.000 13.180 896.000 15.940 ;
         RECT 4.300 12.460 896.000 13.180 ;
+      LAYER Metal4 ;
+        RECT 453.180 98.090 470.260 119.750 ;
   END
-END user_proj_example
+END rift2Wrap
 END LIBRARY
 

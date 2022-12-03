@@ -23,6 +23,9 @@ SIM?=RTL
 # Install lite version of caravel, (1): caravel-lite, (0): caravel
 CARAVEL_LITE?=1
 
+export OPENLANE_ROOT=$(PWD)/dependencies/openlane_src
+export PDK_ROOT=$(PWD)/dependencies/pdks
+
 # PDK switch varient
 export PDK?=gf180mcuC
 #export PDK?=gf180mcuC
@@ -76,6 +79,7 @@ ifeq ($(PDK),gf180mcuC)
 	#export OPEN_PDKS_COMMIT?=0059588eebfc704681dc2368bd1d33d96281d10f
 	export OPEN_PDKS_COMMIT?=35c7265f51749ad8d9fdbb575af22c7c8fab974e
 	export OPENLANE_TAG?=2022.11.29
+
 
 endif
 

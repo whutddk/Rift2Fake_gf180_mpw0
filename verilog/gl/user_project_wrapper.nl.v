@@ -1,3 +1,4 @@
+// This is the unpowered netlist.
 module user_project_wrapper (user_clock2,
     wb_clk_i,
     wb_rst_i,
@@ -5,8 +6,6 @@ module user_project_wrapper (user_clock2,
     wbs_cyc_i,
     wbs_stb_i,
     wbs_we_i,
-    vss,
-    vdd,
     io_in,
     io_oeb,
     io_out,
@@ -25,8 +24,6 @@ module user_project_wrapper (user_clock2,
  input wbs_cyc_i;
  input wbs_stb_i;
  input wbs_we_i;
- input vss;
- input vdd;
  input [37:0] io_in;
  output [37:0] io_oeb;
  output [37:0] io_out;
@@ -41,8 +38,6 @@ module user_project_wrapper (user_clock2,
 
 
  rift2Wrap i_rift2Wrap (.user_clock2(user_clock2),
-    .vdd(vdd),
-    .vss(vss),
     .wb_clk_i(wb_clk_i),
     .wb_rst_i(wb_rst_i),
     .wbs_ack_o(wbs_ack_o),
@@ -459,3 +454,4 @@ module user_project_wrapper (user_clock2,
     wbs_sel_i[1],
     wbs_sel_i[0]}));
 endmodule
+

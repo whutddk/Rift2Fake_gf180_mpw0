@@ -16,17 +16,19 @@
 set ::env(PDK) "gf180mcuC"
 set ::env(STD_CELL_LIBRARY) "gf180mcu_fd_sc_mcu7t5v0"
 
-set ::env(DESIGN_NAME) user_proj_example
+set ::env(DESIGN_NAME) rift2Wrap
 
 set ::env(VERILOG_FILES) "\
 	$::env(CARAVEL_ROOT)/verilog/rtl/defines.v \
-	$::env(DESIGN_DIR)/../../verilog/rtl/user_proj_example.v"
+	$::env(DESIGN_DIR)/../../verilog/rtl/Sky130BLFSR.v \
+	$::env(DESIGN_DIR)/../../verilog/rtl/rift2Fake.v \
+	"
 
 set ::env(DESIGN_IS_CORE) 0
 
 set ::env(CLOCK_PORT) "wb_clk_i"
-set ::env(CLOCK_NET) "counter.clk"
-set ::env(CLOCK_PERIOD) "24.0"
+set ::env(CLOCK_NET) "i_fake.clock"
+set ::env(CLOCK_PERIOD) "20.0"
 
 set ::env(FP_SIZING) absolute
 set ::env(DIE_AREA) "0 0 900 600"
