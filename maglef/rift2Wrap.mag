@@ -1,7 +1,7 @@
 magic
 tech gf180mcuC
 magscale 1 5
-timestamp 1669863415
+timestamp 1670059344
 << obsm1 >>
 rect 672 855 89320 58617
 << metal2 >>
@@ -938,7 +938,7 @@ rect 71344 1538 71504 58438
 rect 79024 1538 79184 58438
 rect 86704 1538 86864 58438
 << obsm4 >>
-rect 45318 9809 47026 11975
+rect 45878 2081 46858 6991
 << labels >>
 rlabel metal3 s 89600 1624 90000 1680 6 io_in[0]
 port 1 nsew signal input
@@ -1800,8 +1800,8 @@ port 418 nsew signal input
 string FIXED_BBOX 0 0 90000 60000
 string LEFclass BLOCK
 string LEFview TRUE
-string GDS_END 2687318
-string GDS_FILE /mnt/r/work/Rift2Fake_gf180_mpw0/openlane/user_proj_example/runs/22_12_01_10_55/results/signoff/rift2Wrap.magic.gds
-string GDS_START 187576
+string GDS_END 2729064
+string GDS_FILE /mnt/r/work/Rift2Fake_gf180_mpw0/openlane/user_proj_example/runs/22_12_03_17_21/results/signoff/rift2Wrap.magic.gds
+string GDS_START 202990
 << end >>
 
